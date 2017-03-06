@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        print(headView.frame)
     }
     
     func setupView() {
@@ -44,14 +46,17 @@ class ViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        // ❓不知道这句话有什么用？
         tableView.tableFooterView = UIView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
         tableView.showsVerticalScrollIndicator = false
         
+        // 图片视图部分能够处理手势、图片视图和tableView按序紧贴一起的关键代码
         tableView.contentInset.top = HeadViewHeight
         tableView.contentOffset = CGPoint(x: 0.0, y: -HeadViewHeight)
         
         view.addSubview(tableView)
+        // 这里涉及到添加视图的顺序，所以需要主动调整
         view.sendSubview(toBack: tableView)
         
     }
@@ -90,6 +95,7 @@ extension ViewController:UITableViewDataSource, UITableViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offsety = scrollView.contentOffset.y + scrollView.contentInset.top
+        print(scrollView.contentInset.top)
         if offsety <= 0 {
             headView.frame = CGRect(x: 0.0, y: 0.0, width: BYWidth, height: HeadViewHeight - offsety)
         } else {
