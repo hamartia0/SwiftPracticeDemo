@@ -11,9 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var timer = Timer()
-    
     var countTime = 0
-    
     let showTimeLabel = UILabel.init()
     
     override func viewDidLoad() {

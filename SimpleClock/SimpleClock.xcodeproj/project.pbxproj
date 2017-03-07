@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					95C2DDD51E6932F700EFA51E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D9R3CXHX5T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -258,9 +259,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D9R3CXHX5T;
 				INFOPLIST_FILE = SimpleClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zby.SimpleClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zby.LearnContentInsetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,9 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D9R3CXHX5T;
 				INFOPLIST_FILE = SimpleClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zby.SimpleClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zby.LearnContentInsetDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -297,6 +300,7 @@
 				95C2DDEA1E6932F700EFA51E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
